@@ -512,8 +512,8 @@ p{
 
     width: 44px;
     height: 44px;
-    
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     
 }
 .icon-link:hover,
@@ -567,7 +567,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .clietns-logo{
@@ -610,9 +610,9 @@ p{
     border: none;
     padding: 6px 22px 6px 22px;
     cursor: pointer;
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    
 }
 .buttons{
     display: flex;
@@ -643,9 +643,10 @@ p{
 {
     color: var(--hover-button-color);
     background-color: var(--accent);
-    border-radius: 4px;
+   
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px
+    
 }
 
 
@@ -689,9 +690,7 @@ p{
     overflow: hidden;
 }
 
-.our-works-description{
-   
-}
+
 
 .our-works-overlay{
 position: absolute;
@@ -708,8 +707,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .our-works-overlay-description{
 
-font-family: 'Roboto';
-font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 28px;
@@ -730,10 +727,9 @@ color: #FFFFFF;
 
 .our-works-item{
     margin-bottom: 30px;
-
     width: 370px;
     margin-right: 30px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+   
 }
 
 
@@ -756,13 +752,14 @@ color: #FFFFFF;
 
 .our-works-link{
     text-decoration: none;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .our-works-link:hover,
 .our-works-link:focus{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 
@@ -799,7 +796,7 @@ color: #FFFFFF;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--info-text-color);
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .link-addres-footer{
     display: inline-block;
@@ -810,7 +807,7 @@ color: #FFFFFF;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #fff;
-    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .link-contacts-footer-item:not(:last-child){
     margin-bottom: 9px;
@@ -886,7 +883,7 @@ color: #FFFFFF;
     height:100%;
     background-color: var(--backdrop-color);
     z-index: 2;
-    transition: opacity 0.5s, visibility 0.5s ;
+    transition: opacity 0.5s, visibility 0.5s, cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .backdrop.is-hidden{
@@ -913,7 +910,7 @@ border-radius: 4px;
 .close-button{
     position: absolute;
     width: 30px;
-height: 30px;
+    height: 30px;
     top: 8px;
     right: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
