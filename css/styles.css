@@ -519,7 +519,7 @@ p{
 .icon-link:hover,
 .icon-link:focus{
     background-color: var(--accent);
-    border-radius: 50%;
+    
    
     
 }
@@ -537,7 +537,7 @@ p{
     align-items: center;
     width: 20x;
     height: 20px;
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .our-team-content{
     background-color: var(--body-bgd);
@@ -610,8 +610,10 @@ p{
     border: none;
     padding: 6px 22px 6px 22px;
     cursor: pointer;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
     
 }
 .buttons{
@@ -619,18 +621,18 @@ p{
     margin-bottom: 50px;
     justify-content: center;
     
-    
 }
 
 
 .buttons > li .current{
     color: var(--hover-button-color);
     background-color: var(--accent);
-    border-radius: 4px;
+    
     
 }
 .content-button{
     border-radius: 4px;
+    
 }
 .buttons-item:not(:last-child){
     margin-right: 8px;
@@ -645,8 +647,8 @@ p{
     background-color: var(--accent);
    
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px
     
+    border-radius: 4px;
 }
 
 
@@ -681,7 +683,7 @@ p{
     border-bottom:1px solid #EEEEEE;
     text-align: left;
     padding-left: 24px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     
 
 }
@@ -762,7 +764,7 @@ color: #FFFFFF;
 .our-works-link:hover,
 .our-works-link:focus{
     /* border: 1px solid #EEEEEE; */
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     
 }
 
@@ -887,7 +889,8 @@ color: #FFFFFF;
     height:100%;
     background-color: var(--backdrop-color);
     z-index: 2;
-    transition: opacity 0.5s, visibility 0.5s, cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .backdrop.is-hidden{
